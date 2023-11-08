@@ -3,10 +3,14 @@ body {
     font-size: 14px;
     color: #0a143a;
 }
-.header {
+.container {
     max-width: 1150px;
     margin: auto;
+}
+.header {
     padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 12px;
 }
 
 .navbar {
@@ -83,4 +87,121 @@ body {
 
 .search__button__text {
     margin-left: 5px;
+}
+
+
+/* MAIN */
+
+.page_content {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    grid-column-gap: 30px;
+}
+
+.card__img {
+    border-radius: 10px;
+    width: 264px;
+    height: 178px;
+    object-fit: cover;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.card:not(:nth-child(3n)) {
+    margin-right: 24px;
+}
+
+.card__title {
+    color: #256EEB;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.card__price {
+    color: #0A143A;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.card__text {
+    color: #C4C4C4;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+/* ASIDE */
+
+.sidebar .page__title {
+    font-size: 18px;
+    line-height: 21px;
+}
+.service {
+    margin-bottom: 25px;
+}
+
+.service__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.service__text {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 217px;
+}
+
+.footer .footer__text {
+    color: #C4C4C4;
+    font-family: Roboto;
+    font-size: 14px;
+}
+
+
+.footer__menu__item {
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer__text {
+    text-decoration: none;
+}
+
+
+.footer__text__link {
+    display: block;
+    color: #0A143A;
+    text-decoration: none;
+    margin-bottom: 5px;
+    
 }
