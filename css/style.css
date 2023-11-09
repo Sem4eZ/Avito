@@ -382,6 +382,7 @@ body {
 @media (max-width: 1200px){
     .container {
         max-width: 960px;
+        grid-template-columns: 8fr 4fr;
     }
 
     .cards a{
@@ -400,9 +401,7 @@ body {
     .card__header {
         max-width: 82%;
     }
-    .container {
-        grid-template-columns: 12fr;
-    }
+    
 
     .sidebar a img {
         display: none;
@@ -521,7 +520,10 @@ body {
 }
 
 @media (max-width: 576px) {
-    
+    .container {
+        max-width: 90%;
+        
+    }
 
     .page_content {
         grid-template-columns: 12fr;
@@ -539,8 +541,8 @@ body {
     .card {
         margin-right: 0;
     }
-
-   
+    
+    
 
 
 }
